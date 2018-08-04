@@ -1,0 +1,14 @@
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.csprojAssemblyReference.cache
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.csproj.CoreCompileInputs.cache
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.RazorAssemblyInfo.cache
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.RazorAssemblyInfo.cs
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.AssemblyInfoInputs.cache
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.AssemblyInfo.cs
+C:\Git\ook-ng\ook.api\bin\Debug\netcoreapp2.1\OOK.API.deps.json
+C:\Git\ook-ng\ook.api\bin\Debug\netcoreapp2.1\OOK.API.runtimeconfig.json
+C:\Git\ook-ng\ook.api\bin\Debug\netcoreapp2.1\OOK.API.runtimeconfig.dev.json
+C:\Git\ook-ng\ook.api\bin\Debug\netcoreapp2.1\OOK.API.dll
+C:\Git\ook-ng\ook.api\bin\Debug\netcoreapp2.1\OOK.API.pdb
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.RazorTargetAssemblyInfo.cache
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.dll
+C:\Git\ook-ng\ook.api\obj\Debug\netcoreapp2.1\OOK.API.pdb
