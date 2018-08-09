@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { BrowserPlatformLocation } from '../../../node_modules/@angular/platform-browser/src/browser/location/browser_platform_location';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
   }
 
   registerToggle() {
-    this.registerMode = !this.registerMode;
+    this.registerMode = true;
   }
 
   getValues() {
@@ -26,6 +27,10 @@ export class HomeComponent implements OnInit {
     }, error => {
       console.log(error);
     });
+  }
+
+  cancelRegisterMode(registerMode: boolean) {
+    this.registerMode = registerMode;
   }
 
 }
