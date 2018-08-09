@@ -8,12 +8,6 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  @Input() valuesFromHome: any;
-  /*
-    This input property allows this component to receive this value from other components
-    Input properties use suare brackets in the DOM
-  */
-
   @Output() cancelRegister = new EventEmitter();
   /* Always 4 parts to an output property
     1 create the property and assign it a new event emitter
