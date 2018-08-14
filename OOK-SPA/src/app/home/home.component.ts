@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { BrowserPlatformLocation } from '../../../node_modules/@angular/platform-browser/src/browser/location/browser_platform_location';
+import { BrowserPlatformLocation } from '@angular/platform-browser/src/browser/location/browser_platform_location';
 
 @Component({
   selector: 'app-home',
