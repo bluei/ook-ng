@@ -1,4 +1,4 @@
-// pick up at section 9, lecture 91
+// pick up at section 10, lecture 94
 
 import { appRoutes } from './routes';
 import { BrowserModule } from '@angular/platform-browser';
@@ -21,6 +21,8 @@ import { ListsComponent } from './lists/lists.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { MemberDetailResolver } from './_resolvers/member-detail.resolver';
+import { MemberEditComponent } from './members/member-edit/member-edit.component';
+import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { MemberListComponent } from './members/member-list/member-list.component';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MessagesComponent } from './messages/messages.component';
@@ -42,7 +44,8 @@ export function tokenGetter() {
       ListsComponent,
       MessagesComponent,
       MemberCardComponent,
-      MemberDetailComponent
+      MemberDetailComponent,
+      MemberEditComponent
    ],
    imports: [
       BrowserModule,
@@ -67,7 +70,8 @@ export function tokenGetter() {
       AuthGuard,
       UserService,
       MemberDetailResolver,
-      MemberListResolver
+      MemberListResolver,
+      MemberEditResolver
    ],
    bootstrap: [
       AppComponent
