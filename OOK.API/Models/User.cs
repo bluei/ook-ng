@@ -16,7 +16,7 @@ namespace OOK.API.Models
         public DateTime Created { get; set; }
         public DateTime LastActive { get; set; }
         public string Ranking { get; set; }
-        public DateTime LastTestDate { get; set; }
+        public DateTime? LastTestDate { get; set; }
         public string Introduction { get; set; }
         public string Interests { get; set; }
         public string Street { get; set; }

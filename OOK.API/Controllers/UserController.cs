@@ -45,5 +45,26 @@ namespace OOK.API.Controllers
             return Ok(userToReturn);
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUser(int id, UserForUpdateDto userForUpdateDto)
+        {
+            // check that the user updating the profile matches the token that the server is receiving
+            // compare id of path to the user id in the token
+            if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+                return Unauthorized();
+            
+            var userFromRepo = await _repo.GetUser(id);
+
+            _mapper.Map(userForUpdateDto, userFromRepo);
+
+            // Only the fields in the UserForUpdateDto model are updated.  Other fields are unchanged.
+
+            if(await _repo.SaveAll())
+                return NoContent();
+
+            // if we don't return NoContent (successful save), something went wrong
+            throw new Exception($"Updating user {id} failed on save");
+        }
+
     }
 }

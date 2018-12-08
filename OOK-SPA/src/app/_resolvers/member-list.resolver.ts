@@ -13,6 +13,7 @@ export class MemberListResolver implements Resolve<User[]> {
     // This gets the data from our route, rather than going directly to the user service
     // from the component. It gets the data before we activate the route itself.
     resolve(route: ActivatedRouteSnapshot): Observable<User[]> {
+        console.log('hit the MemberListResolver');
         return this.userService.getUsers().pipe(
             catchError(error => {
                 this.alertify.error('Problem retreiving data.');

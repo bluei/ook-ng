@@ -12,7 +12,7 @@ namespace OOK.API.Helpers
             response.Headers.Add("Access-Control-Allow-Origin", "*");
         }
 
-        public static int CalcualteAge(this DateTime theDateTime)
+        public static int CalculateAge(this DateTime theDateTime)
         {
             var age = DateTime.Today.Year - theDateTime.Year;
             if (theDateTime.AddYears(age) > DateTime.Today)
