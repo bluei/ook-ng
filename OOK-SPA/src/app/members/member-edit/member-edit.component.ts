@@ -18,6 +18,7 @@ export class MemberEditComponent implements OnInit {
   // The prevent-unsaved-changes route guard warns if there are unsaved changes as you try to navigate away.
   // The code below allows the browser to warn you if there are changes and you try to close the browser
   @HostListener('window:beforeunload', ['$event'])
+
   unloadNotification($event: any) {
     if (this.editForm.dirty) {
       $event.returnValue = true;
