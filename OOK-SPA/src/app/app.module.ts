@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { AuthService } from './_services/auth.service';
 import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { FileUploadModule } from 'ng2-file-upload';
 import { HomeComponent } from './home/home.component';
 import { ListsComponent } from './lists/lists.component';
 import { MemberCardComponent } from './members/member-card/member-card.component';
@@ -27,6 +28,7 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { MessagesComponent } from './messages/messages.component';
 import { NavComponent } from './nav/nav.component';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes';
 import { RegisterComponent } from './register/register.component';
 import { UserService } from './_services/user.service';
@@ -46,7 +48,8 @@ export function tokenGetter() {
       MessagesComponent,
       MemberCardComponent,
       MemberDetailComponent,
-      MemberEditComponent
+      MemberEditComponent,
+      PhotoEditorComponent
    ],
    imports: [
       BrowserModule,
@@ -62,6 +65,7 @@ export function tokenGetter() {
           }
       }),
       NgxGalleryModule,
+      FileUploadModule,
       TabsModule.forRoot()
    ],
    providers: [

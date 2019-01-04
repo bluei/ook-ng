@@ -65,6 +65,5 @@ namespace OOK.API.Controllers
             // if we don't return NoContent (successful save), something went wrong
             throw new Exception($"Updating user {id} failed on save");
         }
-
     }
 }
