@@ -11,11 +11,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using OOK.API.Data;
 using OOK.API.Dtos;
+using OOK.API.Helpers;
 using OOK.API.Models;
 
 
 namespace OOK.API.Controllers
 {
+    [ServiceFilter(typeof(LogUserActivity))]
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]

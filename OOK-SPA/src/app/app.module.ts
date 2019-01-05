@@ -9,6 +9,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { NgModule } from '@angular/core';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { RouterModule } from '@angular/router';
+import { TimeAgoPipe } from 'time-ago-pipe';
 
 // local components
 import { AlertifyService } from './_services/alertify.service';
@@ -49,7 +50,8 @@ export function tokenGetter() {
       MemberCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
-      PhotoEditorComponent
+      PhotoEditorComponent,
+      TimeAgoPipe
    ],
    imports: [
       BrowserModule,
